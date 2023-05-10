@@ -130,6 +130,8 @@ dependencies {
 
     // Workflow
     implementation(libs.workflow.android)
+    implementation(libs.workflow.compose)
+    implementation(libs.workflow.compose.tooling)
 
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.hilt.android)

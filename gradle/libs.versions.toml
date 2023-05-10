@@ -52,7 +52,7 @@ targetSdk = "33"
 version-catalog-update = "0.8.0"
 
 # Workflow
-workflow = "1.7.1"
+workflow = "1.10.0-beta04"
 
 [libraries]
 accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
@@ -128,6 +128,8 @@ robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectr
 rometools-modules = { module = "com.rometools:rome-modules", version.ref = "rome" }
 rometools-rome = { module = "com.rometools:rome", version.ref = "rome" }
 workflow-android = { module = "com.squareup.workflow1:workflow-ui-core-android", version.ref = "workflow" }
+workflow-compose = { module = "com.squareup.workflow1:workflow-ui-compose", version.ref = "workflow" }
+workflow-compose-tooling = { module = "com.squareup.workflow1:workflow-ui-compose-tooling", version.ref = "workflow" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
