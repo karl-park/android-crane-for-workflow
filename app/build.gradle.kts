@@ -128,6 +128,9 @@ dependencies {
 
     implementation(libs.androidx.lifecycle.viewModelCompose)
 
+    // Workflow
+    implementation(libs.workflow.android)
+
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
