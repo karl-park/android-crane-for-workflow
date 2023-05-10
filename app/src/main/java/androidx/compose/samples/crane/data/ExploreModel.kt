@@ -26,6 +26,17 @@ data class City(
     val longitude: String
 ) {
     val nameToDisplay = "$name, $country"
+
+    companion object {
+        fun parse(string: String) : City {
+            return City(
+                name = string,
+                country = string,
+                latitude = "12",
+                longitude = "13"
+            )
+        }
+    }
 }
 
 @Immutable

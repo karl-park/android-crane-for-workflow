@@ -1,6 +1,5 @@
 package androidx.compose.samples.crane.details.workflow
 
-import android.util.Log
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.runtime.Composable
@@ -17,6 +16,7 @@ val DetailBinding = composeScreenViewFactory<DetailRendering> { rendering, _ ->
         onErrorLoading = {
 
         },
+        detailRendering = rendering,
         modifier = Modifier
             .statusBarsPadding()
             .navigationBarsPadding()
@@ -24,8 +24,14 @@ val DetailBinding = composeScreenViewFactory<DetailRendering> { rendering, _ ->
 }
 
 @OptIn(WorkflowUiExperimentalApi::class)
-@Preview(heightDp = 150, showBackground = true)
+@Preview(heightDp = 250, showBackground = true)
 @Composable
 fun DrawHelloRenderingPreview() {
-    DetailBinding.Preview(DetailRendering("Singapore!", city = null, {}, {}))
+    DetailBinding.Preview(
+        DetailRendering("Singapore!",
+            city = null,
+            zoomIn = {},
+            zoomOut = {}
+        )
+    )
 }
